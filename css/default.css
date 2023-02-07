@@ -1,17 +1,6 @@
-/* ------------------------------------------------------------------ */
-/* a. Webfonts and Icon fonts
- ------------------------------------------------------------------ */
-
 @import url("fonts.css");
 @import url("fontello/css/fontello.css");
 @import url("font-awesome/css/font-awesome.min.css");
-
-/* ------------------------------------------------------------------
-/* b. Reset
-      Adapted from:
-      Normalize.css - https://github.com/necolas/normalize.css/
-      HTML5 Doctor Reset - html5doctor.com/html-5-reset-stylesheet/
-/* ------------------------------------------------------------------ */
 
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -39,18 +28,6 @@ footer,header,hgroup,menu,nav,section {
    display: block;
 }
 
-audio,
-canvas,
-video {
-   display: inline-block;
-}
-
-audio:not([controls]) {
-   display: none;
-   height: 0;
-}
-
-[hidden] { display: none; }
 
 code, kbd, pre, samp {
    font-family: monospace, serif;
@@ -94,16 +71,6 @@ table {
    border-spacing: 0;
 }
 
-
-/* ------------------------------------------------------------------ */
-/* c. Default and Basic Styles
-      Adapted from:
-      Skeleton CSS Framework - http://www.getskeleton.com/
-      Typeplate Typographic Starter Kit - http://typeplate.com/
-/* ------------------------------------------------------------------ */
-
-/*  1. Basic  ------------------------------------------------------- */
-
 *,
 *:before,
 *:after {
@@ -123,21 +90,18 @@ body {
    font-weight: normal;
    font-size: 15px;
    line-height: 30px;
-	color: #838C95;
+	color: #838C95; /* Body font colour */
 
-   -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+   -webkit-font-smoothing: antialiased;
 	-webkit-text-size-adjust: 100%;
 }
 
-/*  2. Typography
-       Vertical rhythm with leading derived from 6
---------------------------------------------------------------------- */
-
 h1, h2, h3, h4, h5, h6 {
-   color: #313131;
+   color: #313131; /* Header Font Colour */
 	font-family: 'opensans-bold', sans-serif;
    font-weight: normal;
 }
+
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
 h1 { font-size: 38px; line-height: 42px; margin-bottom: 12px; letter-spacing: -1px; }
 h2 { font-size: 28px; line-height: 36px; margin-bottom: 6px; }
@@ -154,8 +118,6 @@ p.lead {
    margin-bottom: 18px;
 }
 
-/* for 'em' and 'strong' tags, font-size and line-height should be same with
-the body tag due to rendering problems in some browsers */
 em { font: 15px/30px 'opensans-italic', sans-serif; }
 strong, b { font: 15px/30px 'opensans-bold', sans-serif; }
 small { font-size: 11px; line-height: inherit; }
@@ -194,15 +156,7 @@ blockquote cite:before { content: "\2014 \0020"; }
 blockquote cite a,
 blockquote cite a:visited { color: #8B9798; border: none }
 
-/* ---------------------------------------------------------------------
-/*  Pull Quotes Markup
-/*
-    <aside class="pull-quote">
-		<blockquote>
-			<p></p>
-		</blockquote>
-	 </aside>
-/*
+
 /* --------------------------------------------------------------------- */
 .pull-quote {
    position: relative;
@@ -243,13 +197,12 @@ abbr {
 }
 abbr:hover { cursor: help; }
 
-/* drop cap */
 .drop-cap:first-letter {
 	float: left;
 	margin: 0;
 	padding: 14px 6px 0 0;
 	font-size: 84px;
-	font-family: /* Copperplate */ 'opensans-bold', sans-serif;
+	font-family: 'opensans-bold', sans-serif;
    line-height: 60px;
 	text-indent: 0;
 	background: transparent;
@@ -292,16 +245,6 @@ li { line-height: 18px; margin-bottom: 12px; }
 ul.large li { }
 li p { }
 
-/* ---------------------------------------------------------------------
-/*  Stats Tab Markup
-
-    <ul class="stats-tabs">
-		<li><a href="#">[value]<b>[name]</b></a></li>
-	 </ul>
-
-    Extend this object into your markup.
-/*
-/* --------------------------------------------------------------------- */
 .stats-tabs {
    padding: 0;
    margin: 24px 0;
@@ -492,13 +435,6 @@ input[type="button"].full-width {
 	text-align: center;
 }
 
-/* Fix for odd Mozilla border & padding issues */
-button::-moz-focus-inner,
-input::-moz-focus-inner {
-    border: 0;
-    padding: 0;
-}
-
 
 /*  7. Forms  --------------------------------------------------------- */
 
@@ -524,10 +460,6 @@ select {
 	background: #D3D9D9;
 
 }
-
-/* select { padding: 0;
-   width: 220px;
-   } */
 
 input[type="text"]:focus,
 input[type="password"]:focus,
@@ -560,20 +492,12 @@ input[type="radio"] {
 
 input[type="checkbox"] { display: inline; }
 
-/* ------------------------------------------------------------------ */
-/* d. Grid
----------------------------------------------------------------------
-   gutter = 40px.
-/* ------------------------------------------------------------------ */
-
-/* default
---------------------------------------------------------------- */
 .row {
    width: 96%;
    max-width: 1020px;
    margin: 0 auto;
 }
-/* fixed width for IE8 */
+
 .ie .row { width: 1000px ; }
 
 .narrow .row { max-width: 980px; }
@@ -746,10 +670,6 @@ properly.
 /* ------------------------------------------------------------------ */
 /* e. Others
 /* ------------------------------------------------------------------ */
-
-/*  1. Clearing
-    (http://nicolasgallagher.com/micro-clearfix-hack/
---------------------------------------------------------------------- */
 
 .cf:before,
 .cf:after {
